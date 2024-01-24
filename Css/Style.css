@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    font-family: Futura PT Demi;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 1px 1px 1px .5px rgba(0, 0, 0, 0.1);
+}
+
+.first-nav {
+    padding-left: 120px;
+}
+
+.second-nav {
+    font-size: 1rem;
+    padding-right: 30px;
+}
+
+header ul {
+    margin-top: 23px;
+    font-size: 1.2rem;
+}
+
+header ul li {
+    padding: 12px;
+    list-style: none;
+    display: inline;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-logo {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    padding-left: 43px;
+    margin-top: 20px;
+}
+
+.moreButton {
+    color: #ff764d;
+}
+
+.fa-plus {
+    font-size: 16px;
+    transform: translateY(1px);
+}
+
+.freeLive {
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.menu {
+    display: none;
+}
+nav {
+    font-family: Futura PT Demi;
+    display: flex;
+}
+.third-nav {
+    padding: 25px;
+    list-style: none;
+}
+
+.third-nav li {
+    display: inline;
+    padding: 10px;
+}
+
+.third-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.imgHeader {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imgHeader img {
+    width: 1200px;
+    height: auto;
+    z-index: 101;
+    display: block;
+    margin: auto;
+}
+
+.imgHeader div {
+    z-index: 102;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Futura PT Heavy;
+    font-size: 10rem;
+    color: #ff764d;
+}
+
+.menuBar {
+    display: none;
+}
+@media (max-width:1280px) {
+    header ul {
+        font-size: 1rem;
+        font-family: Futura PT Demi;
+    }
+    header ul li {
+        padding: 8px;
+    }
+    .main-logo {
+        padding-left: 20px;
+    }
+    .first-nav {
+        padding-left: 94px;
+    }
+    .second-nav {
+        font-size: .9rem;
+        font-family: Futura PT Medium;
+        font-weight: 100;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .first-nav, .second-nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+        margin-left: 80px;
+    }
+    .menuBar {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #0000ff;
+    }
+}
